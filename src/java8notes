@@ -1,0 +1,44 @@
+Java 8 features:
+----------------
+1. Functional Interface
+2. Lambda Expression
+3. Stream api
+4. Optional
+5. Date & Time api
+
+------------------------------
+1. Functional Interfcae:
+------------------
+a) Must have only one abstract method
+b) @FunctionalInterface be used
+c) along with abstract method normal method(have implementation) also we can write
+   declare that normal method as 'default' method
+-------------------------
+2. Lambda Expression:
+------------------
+It is anonymous class of an functional interface. Where it helps to create class at run time
+
+(parameter) -> expression({code block of method(single abstract method of FI) body})
+
+1. Create one FI named "Consumer" with single abstract method called 'consume' and
+2 default method called 'test' and 'check'.
+
+in consume method take 3 arguments as String, float and int. consume method will
+display calculation of 3 variables, float need to converted int and then sum with int and then concat with String and display.
+
+-----------------------------------------------------------------------
+List of Employee, need filter those set of employee whose salary is more than 100000.
+
+Stream :
+First we need to convert each Collection object has to be converted to to stream object
+to perform stream operations.
+Stream does not change the data structure of collection.
+
+1. Intermediate Operations:
+    i. map
+   ii. filter
+  iii. sorted
+2. terminal Operation:
+    i. collect
+   ii. forEach
+  iii. reduce
